@@ -4,7 +4,6 @@ def main():
 	print_header()
 	game_loop()
 
-import actors
 
 def print_header():
 	print("--------------------------")
@@ -36,8 +35,9 @@ def game_loop():
 	while True:
 
 		active_creature = random.choice(creatures)
-		print("A {} of level {} has appear from a dark and foggy forest....".format
-			(active_creature.name, active_creature.level))
+		print(active_creature)
+		#print("A {} of level {} has appear from a dark and foggy forest....".format
+			#(active_creature.name, active_creature.level))
 		print()
 
 
